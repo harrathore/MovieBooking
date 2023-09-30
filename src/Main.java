@@ -1,17 +1,22 @@
-import admin.Admin;
-import users.User;
+import theater.models.Ticket;
+import users.MoviesAdmin;
+import users.TheaterAdmin;
+import users.Customer;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("This is the application to book movie shows!");
+        System.out.println("This is the Main interface where all users will interact");
 
-        Admin admin = new Admin();
-        admin.createTheaterAndAddShows();
+        MoviesAdmin moviesAdmin1 = new MoviesAdmin();
+        moviesAdmin1.addAMovieToDb();
 
-        User user = new User("Harvendra");
-        user.bookMovieTickets();
+        TheaterAdmin theaterAdmin1 = new TheaterAdmin();
+        theaterAdmin1.createTheaterAndAddShows();
 
-        User user1 = new User("Ram");
-        user1.bookMovieTickets();
+        Customer customer1 = new Customer("Harvendra");
+        Ticket ticket = customer1.bookMovieTickets();
+
+        Customer customer2 = new Customer("Ram");
+        customer2.bookMovieTickets();
     }
 }

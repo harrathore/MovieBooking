@@ -1,7 +1,7 @@
-package pricing;
+package theater.pricing;
 
 import theater.enums.SEAT_TYPE_ENUM;
-import theater.screens.ShowSeat;
+import theater.shows.ShowSeat;
 import theater.shows.Show;
 
 public class PricingManager {

@@ -5,34 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f943495e-c969-4bb8-8ebf-b9b882fdc888" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieBooking.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/admin/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/admin/MoviesCatalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pricing/ClassicPricingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pricing/PremiumPricingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pricing/PricingManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pricing/SeatPricingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pricing/StandardPricingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/AddressModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/GenericCustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/Theater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/enums/SEAT_STATUS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/enums/SEAT_TYPE_ENUM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/enums/SHOW_CAPACITY_STATUS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/enums/SHOW_STATUS_ENUM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/screens/Screen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/screens/Seat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/screens/ShowSeat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theater/shows/Show.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/MoviesDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theater/models/SearchTheaterRequestModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/users/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/users/MoviesAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/users/TheaterAdminInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/TheaterAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/MoviesCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ShowsCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pricing/ClassicPricingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/pricing/ClassicPricingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pricing/PremiumPricingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/pricing/PremiumPricingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pricing/PricingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/pricing/PricingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pricing/SeatPricingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/pricing/SeatPricingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pricing/StandardPricingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/pricing/StandardPricingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theater/AddressModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/models/AddressModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theater/GenericCustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/exceptions/GenericCustomException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theater/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theater/Theater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/Theater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theater/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/models/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theater/screens/ShowSeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/shows/ShowSeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theater/shows/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/theater/shows/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,5 +82,16 @@
       <updated>1695823582851</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/theater/shows/Show.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

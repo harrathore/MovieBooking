@@ -1,6 +1,6 @@
-package admin;
+package users;
 
-import theater.AddressModel;
+import theater.models.AddressModel;
 import theater.Movie;
 import theater.Theater;
 import theater.screens.Screen;
@@ -8,16 +8,17 @@ import theater.shows.Show;
 
 
 
-public class Admin {
+public class TheaterAdmin {
     /**
      * 1. create a theater and add screens into this
      * 2. Add shows to theater and remove shows
      */
 
-    private MoviesCatalog catalog;
+    //private ShowsCatalog catalog;  //Not secure why should a theaterAdmin have access to complete shows catalog
+    private TheaterAdminInterface theaterAdminInterface;
 
-    public Admin(){
-        catalog = MoviesCatalog.getInstanceOfCatalog();
+    public TheaterAdmin(){
+        theaterAdminInterface = TheaterAdminInterface.getTheaterAdminInterfaceAdmin();
     }
 
     public Theater createTheaterAndAddShows(){
@@ -28,7 +29,10 @@ public class Admin {
         theater.addScreenToTheater(screen2);
         theater.addScreenToTheater(screen1);
 
-        Movie movie = new Movie("Jawaan");
+        /**
+         * This should be searched from MoviesDb - which are going to release and all
+         */
+        Movie movie = new Movie("Movie", 18000L);
         Show show1 = new Show(400L, 500L, screen1, movie);
         theater.addShow(show1);
 
@@ -36,9 +40,9 @@ public class Admin {
         theater.addShow(show2);
 
         System.out.println("Created theater with " + theater +
-                "Screens as : " + screen1 + " " + screen2 + "With Show " + show1 + " " + show2);
+                "Screens as : " + screen1 + " and " + screen2 + "With Show " + show1 + " and " + show2);
 
-        catalog.addTheaterToCatalog(theater);
+        theaterAdminInterface.addTheaterToShowCatalog(theater);
         return theater;
     }
 

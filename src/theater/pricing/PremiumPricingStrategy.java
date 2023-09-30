@@ -1,4 +1,4 @@
-package pricing;
+package theater.pricing;
 
 public class PremiumPricingStrategy implements SeatPricingStrategy {
     @Override

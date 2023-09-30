@@ -1,19 +1,19 @@
 package theater.shows;
 
-import pricing.PricingManager;
-import pricing.SeatPricingStrategy;
-import theater.GenericCustomException;
+import theater.pricing.PricingManager;
+import theater.pricing.SeatPricingStrategy;
+import theater.exceptions.GenericCustomException;
 import theater.Movie;
-import theater.Ticket;
+import theater.models.Ticket;
 import theater.enums.SEAT_STATUS;
 import theater.enums.SHOW_CAPACITY_STATUS;
 import theater.enums.SHOW_STATUS_ENUM;
 import theater.screens.Screen;
 import theater.screens.Seat;
-import theater.screens.ShowSeat;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Show {
     private Long from;
@@ -23,7 +23,7 @@ public class Show {
     private PricingManager pricingManager;
     private SHOW_STATUS_ENUM showStatus;
     private SHOW_CAPACITY_STATUS capacityStatus;
-    private List<ShowSeat> allShowSeat;
+    private Set<ShowSeat> allShowSeat;
 
     public Show(Long from, Long to, Screen screen, Movie movie){     //Call by admin
       this.from = from;
@@ -32,7 +32,7 @@ public class Show {
       this.movie = movie;
       this.showStatus = SHOW_STATUS_ENUM.NOT_STARTED;
       this.capacityStatus = SHOW_CAPACITY_STATUS.EMPTY;
-      this.allShowSeat = new ArrayList<>();
+      this.allShowSeat = new HashSet<>();
       pricingManager = PricingManager.getInstanceOfPricingManger();
       this.createAllShowSeat(screen);
     }
@@ -45,7 +45,7 @@ public class Show {
         });
     }
 
-    public List<ShowSeat> getAllShowSeat(){
+    public Set<ShowSeat> getAllShowSeat(){
         return allShowSeat;
     }
 
@@ -63,7 +63,7 @@ public class Show {
             System.out.println(showSeat.bookSeat());
         }
         System.out.println("Total Fair price is : " + totalAmount);
-        Ticket ticket = new Ticket(showSeats, totalAmount, true);
+        Ticket ticket = new Ticket(userName, showSeats, totalAmount, true);
         return ticket;
     }
 

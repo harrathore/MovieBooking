@@ -1,4 +1,4 @@
-package theater;
+package theater.models;
 
 public class AddressModel {
     private String city;

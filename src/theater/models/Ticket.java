@@ -1,6 +1,6 @@
-package theater;
+package theater.models;
 
-import theater.screens.ShowSeat;
+import theater.shows.ShowSeat;
 
 import java.util.List;
 
@@ -11,7 +11,8 @@ public class Ticket {
     private Integer totalAmount;
     private Boolean isPaid;
 
-    public Ticket(List<ShowSeat> bookedSeats, Integer totalAmount, Boolean isPaid) {
+    public Ticket(String customerName, List<ShowSeat> bookedSeats, Integer totalAmount, Boolean isPaid) {
+        this.customerName = customerName;
         this.ticketNumber = (int) Math.random();
         this.bookedSeats = bookedSeats;
         this.totalAmount = totalAmount;

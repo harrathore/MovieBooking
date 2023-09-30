@@ -1,7 +1,8 @@
-package theater.screens;
+package theater.shows;
 
 import theater.enums.SEAT_STATUS;
 import theater.enums.SEAT_TYPE_ENUM;
+import theater.screens.Seat;
 
 public class ShowSeat{
     private Seat seat;
